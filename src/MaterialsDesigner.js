@@ -113,6 +113,7 @@ class MaterialsDesigner extends mix(React.Component).with(FullscreenComponentMix
                             >
                                 <EditorSelectionInfo
                                     materials={this.props.materials}
+                                    index={this.props.index}
                                 />
                             </div>
                         </div>
