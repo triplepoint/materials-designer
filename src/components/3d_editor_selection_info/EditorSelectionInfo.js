@@ -6,7 +6,7 @@ class EditorSelectionInfo extends React.Component {
         return (
             <div className="text-left p-t-10">
                 <span className="p-l-20">
-                    Material Count: {this.props.material_count }
+                    Material Count: {this.props.materials.length }
                 </span>
             </div>
         )
@@ -14,11 +14,11 @@ class EditorSelectionInfo extends React.Component {
 }
 
 EditorSelectionInfo.propTypes = {
-    material_count: React.PropTypes.number
+    materials: React.PropTypes.array
 };
 
 EditorSelectionInfo.defaultProps = {
-    material_count: 1
+    materials: []
 }
 
 export default EditorSelectionInfo;

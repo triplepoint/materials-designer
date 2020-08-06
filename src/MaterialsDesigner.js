@@ -111,7 +111,9 @@ class MaterialsDesigner extends mix(React.Component).with(FullscreenComponentMix
                                     backgroundColor: "#202020"
                                 }}
                             >
-                                <EditorSelectionInfo/>
+                                <EditorSelectionInfo
+                                    materials={this.props.materials}
+                                />
                             </div>
                         </div>
                     </div>
